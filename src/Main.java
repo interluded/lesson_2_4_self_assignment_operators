@@ -11,7 +11,7 @@ public class Main
         System.out.print("Enter double 1 ");
         double integer_1 = scan.nextDouble();
         System.out.print("Enter double 2 ");
-        double integer_2 = scan.   nextDouble();
+        double integer_2 = scan.nextDouble();
         System.out.print("Enter double 3 ");
         double integer_3 = scan.nextDouble();
         System.out.print("Enter double 4 ");
@@ -19,6 +19,8 @@ public class Main
         System.out.print("Enter double 5 ");
         double integer_5 = scan.nextDouble();
 
+
+        // check if the doubles are even or odd
         if (integer_1 == 0){
             zero++;
         }
@@ -28,11 +30,13 @@ public class Main
         else{
             odd++;
         }
+        
         // integer one complete
 
         if (integer_2 == 0){
             zero++;
         }
+
         else if (integer_2 % 2 == 0){
             even++;
         }
@@ -40,6 +44,7 @@ public class Main
             odd++;
         }
         // integer 2 complete
+
         if (integer_3 == 0){
             zero++;
         }
@@ -50,6 +55,7 @@ public class Main
             odd++;
         }
         // integer 3 complete
+
         if (integer_4 == 0){
             zero++;
         }
@@ -59,6 +65,7 @@ public class Main
         else{
             odd++;
         }
+
         //integer 4 complete
         if (integer_5 == 0){
             zero++;
@@ -70,7 +77,14 @@ public class Main
             odd++;
         }
         //integer 5 complete
-    System.out.println("There are " + even  + " even numbers, " + odd + " odd numbers " + zero + " zero/s");
 
+        //prints out the
+
+        if (zero >= 2){
+            System.out.println("There are " + even  + " even numbers, " + odd + " odd numbers " + zero + " zeros");
+        }
+        else if (zero == 1){
+            System.out.println("There are " + even  + " even numbers, " + odd + " odd numbers " + zero + " zero");
+        }
     }
 }
