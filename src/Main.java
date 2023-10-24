@@ -10,18 +10,27 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         // enter the doubles
         System.out.print("Enter double 1 ");
+
         double integer_1 = scan.nextDouble();
         System.out.print("Enter double 2 ");
+
         double integer_2 = scan.nextDouble();
         System.out.print("Enter double 3 ");
+
         double integer_3 = scan.nextDouble();
         System.out.print("Enter double 4 ");
+
         double integer_4 = scan.nextDouble();
+
         System.out.print("Enter double 5 ");
         double integer_5 = scan.nextDouble();
+
+
         System.out.println("Do you want me to do say it? ");
         Scanner scan2 = new Scanner(System.in);
         String yes_no2 = scan2.nextLine();
+
+
         if (yes_no2.equals("no") || yes_no2.equals("No")){
             yes_no = false;
         }
@@ -72,7 +81,8 @@ public class Main {
             odd++;
         }
         //integer 5 complete
-        //prints out the shit
+
+        //prints out it
         if (yes_no) {
             String zeroText = zero == 1 ? "zero" : "zeros";
 
